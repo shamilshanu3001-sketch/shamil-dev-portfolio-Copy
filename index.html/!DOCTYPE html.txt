@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAMIL_DEV - Game Developer Portfolio</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#070b18;color:#eef3ff;font-family:Arial,sans-serif}
+header{position:sticky;top:0;background:#10182b;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:bold;color:#55e7ff}
+nav a{color:#eef3ff;text-decoration:none;margin-left:18px}
+section{max-width:1050px;margin:auto;padding:65px 24px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;min-height:450px}
+h1{font-size:clamp(40px,6vw,68px);margin:16px 0}
+h1 span,.accent{color:#55e7ff}
+p{color:#aab6d2;line-height:1.8}
+.btn{display:inline-block;padding:12px 18px;margin:8px 8px 0 0;border-radius:10px;background:#55e7ff;color:#07101c;text-decoration:none;font-weight:bold}
+.btn.secondary{background:transparent;color:#eef3ff;border:1px solid #34415f}
+.visual{height:260px;display:grid;place-items:center;border:1px solid #25314c;border-radius:25px;background:radial-gradient(circle,#253b70,#10182b 65%,#070b18)}
+.ship{width:0;height:0;border-left:38px solid transparent;border-right:38px solid transparent;border-bottom:100px solid #55e7ff;filter:drop-shadow(0 0 25px #55e7ff)}
+.cards,.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card,.skill{padding:24px;border:1px solid #25314c;border-radius:16px;background:#10182b}
+.card h3{color:#55e7ff}
+.tag{color:#55e7ff;font-size:12px}
+.skills{grid-template-columns:repeat(4,minmax(0,1fr))}
+.contact{border:1px solid #25314c;border-radius:18px;padding:28px}
+footer{padding:25px;text-align:center;color:#aab6d2;border-top:1px solid #25314c}
+@media(max-width:650px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,minmax(0,1fr))}header{padding:15px;flex-wrap:wrap;gap:12px}nav a{margin-left:8px;font-size:13px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">SHAMIL_DEV</div>
+<nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero" id="about">
+<div><p class="accent">INDIE GAME DEVELOPER · PORTFOLIO</p>
+<h1>Mohammed<br><span>Shamil.</span></h1>
+<p>Hi, I'm Mohammed Shamil, an aspiring game developer creating playable experiences with Unity and C#. I enjoy building game mechanics, experimenting with ideas, and bringing game worlds to life.</p>
+<a class="btn" href="#projects">Explore My Games</a>
+<a class="btn secondary" href="#contact">Contact Me</a></div>
+<div class="visual"><div class="ship"></div></div>
+</section>
+<section id="projects"><h2>Games in Progress<span class="accent">.</span></h2>
+<p>Here are some of my game development projects.</p>
+<div class="cards">
+<div class="card"><span class="tag">UNITY 2D · C#</span><h3>Space Shooter</h3><p>A portrait space-combat game featuring player movement, shooting, enemy waves, hit effects, lives, score, pause, and game-over UI.</p></div>
+<div class="card"><span class="tag">UNITY 2D · ENDLESS RUNNER</span><h3>Kerala Onam Runner</h3><p>A Kerala-inspired runner concept featuring Maveli, festive visuals, running, jumping, and endless gameplay ideas.</p></div>
+<div class="card"><span class="tag">COMING SOON</span><h3>Another Game</h3><p>My next game project will be added here with screenshots, features, and gameplay details.</p></div>
+</div></section>
+<section id="skills"><h2>Tools & Skills<span class="accent">.</span></h2>
+<div class="skills"><div class="skill"><h3>Unity</h3><p>2D scenes and UI</p></div><div class="skill"><h3>C#</h3><p>Gameplay scripts</p></div><div class="skill"><h3>Game Design</h3><p>Mechanics and difficulty</p></div><div class="skill"><h3>Animation</h3><p>Effects and polish</p></div></div></section>
+<section id="contact"><div class="contact"><h2>Let's Make Something Fun.</h2><p>Want to talk about games, collaborations, or a project? Connect with me.</p>
+<a class="btn" href="https://wa.me/918592949221" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+<a class="btn secondary" href="https://www.instagram.com/shaaaamilll__/" target="_blank" rel="noopener noreferrer">Instagram</a></div></section>
+</main>
+<footer>© 2026 Mohammed Shamil · Game Developer</footer>
+</body>
+</html>
